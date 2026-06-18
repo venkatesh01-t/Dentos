@@ -79,6 +79,22 @@
       });
     });
 
+    document.addEventListener('splashStarted', () => {
+      targetY = 0;
+      currentY = 0;
+      if (wrapper) {
+        wrapper.style.transform = `translateY(0px)`;
+      }
+    });
+
+    document.addEventListener('splashFinished', () => {
+      targetY = 0;
+      currentY = 0;
+      if (wrapper) {
+        wrapper.style.transform = `translateY(0px)`;
+      }
+    });
+
     return {
       enabled: true,
       getScroll: () => currentY
@@ -139,7 +155,25 @@
         rootMargin: '0px 0px -60px 0px'
       });
 
-      document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+      let observed = false;
+      const initReveal = () => {
+        if (observed) return;
+        observed = true;
+        document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+      };
+
+      document.addEventListener('splashFinished', initReveal);
+      document.addEventListener('splashStarted', () => {
+        observed = false;
+        document.querySelectorAll('[data-reveal]').forEach((el) => {
+          el.classList.remove('is-visible');
+          revealObserver.unobserve(el);
+        });
+      });
+
+      if (sessionStorage.getItem('splashPlayed') === 'true') {
+        initReveal();
+      }
 
       // ─── Parallax (Hero background grid + glowing orbs) ───
       const parallaxHero = document.querySelector('.hero');
@@ -913,6 +947,8 @@
     function startSplash() {
       clearAll();
 
+      document.dispatchEvent(new CustomEvent('splashStarted'));
+
       splashEl.style.display    = '';
       splashEl.style.opacity    = '';
       splashEl.style.transform  = '';
@@ -953,6 +989,8 @@
         splashEl.classList.add('sp-fade-out');
         timers.push(setTimeout(() => { splashEl.style.display = 'none'; }, 1050));
       }
+
+      document.dispatchEvent(new CustomEvent('splashFinished'));
     }
 
     // ── Boot sequence ──
@@ -963,6 +1001,13 @@
     } else {
       startSplash();
     }
+
+    document.addEventListener('splashStarted', () => {
+      window.scrollTo(0, 0);
+    });
+    document.addEventListener('splashFinished', () => {
+      window.scrollTo(0, 0);
+    });
 
     // ── Controls ──
     if (skipBtn)   skipBtn.addEventListener('click', () => endSplash(false));

@@ -262,6 +262,7 @@
     .nav-links { display:flex; gap:2.2rem; list-style:none; }
     .nav-links a { color:var(--text-secondary); font-weight:500; text-decoration:none; transition:var(--transition); font-size:.97rem; }
     .nav-links a:hover { color:var(--c-blue); }
+    .nav-right { display:flex; align-items:center; gap:.5rem; }
     .nav-cta { display:flex; gap:.8rem; align-items:center; }
 
     /* Focus States for Keyboard Navigation */
@@ -847,9 +848,10 @@
     .mobile-nav {
       display:none;
       position:fixed; top:var(--nav-h); left:0; right:0;
-      background:rgba(4,7,15,.97);
-      backdrop-filter:blur(20px);
-      border-bottom:1px solid var(--c-border2);
+      background:var(--bg-navbar-glass);
+      backdrop-filter:blur(24px);
+      -webkit-backdrop-filter:blur(24px);
+      border-bottom:1px solid var(--border-default);
       padding:1.2rem 1.5rem 1.8rem;
       z-index:9998;
       flex-direction:column;
@@ -863,7 +865,7 @@
     .mobile-nav a {
       color:var(--text-primary); text-decoration:none; font-weight:600;
       font-size:1.05rem; padding:.85rem 0;
-      border-bottom:1px solid var(--c-border);
+      border-bottom:1px solid var(--border-light);
       transition:var(--transition);
     }
     .mobile-nav a:last-child { border-bottom:none; }
@@ -925,6 +927,8 @@
       .nav-links { display:none; }
       .nav-cta { display:none !important; }
       .hamburger { display:flex; }
+      /* Ensure theme toggle and hamburger are nicely spaced in mobile nav */
+      .theme-toggle-btn { margin-left: auto; }
 
       /* Hero */
       .hero { padding:7rem 0 4rem; min-height:auto; }
@@ -2546,33 +2550,9 @@
     }
 
     /* ══════════════════════════ FULL-SCREEN STARTUP SPLASH INTRO ══════════════════════════ */
-    body.scroll-locked {
-      overflow: hidden !important;
-      height: 100vh !important;
-    }
-
-    #startup-intro-splash {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #06080c;
-      z-index: 100000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                  visibility 0.8s;
-    }
-
-    #startup-intro-splash.fade-out {
-      opacity: 0;
-      transform: scale(1.06);
-      pointer-events: none;
-      visibility: hidden;
-    }
+    /* NOTE: The actual #startup-intro-splash styles are defined in the ULTRA-PREMIUM block
+       further below (line ~3192+). This legacy block is intentionally removed to avoid
+       display/transition conflicts — the new block uses display:block with absolute scenes. */
 
     /* Ambient background glows */
     .splash-glow {
