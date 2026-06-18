@@ -641,7 +641,8 @@ window.addEventListener('touchmove', (e) => {
 
     let currentScene = 0;
     let isPlaying = false;
-    let isNarratorUnmuted = false;
+    let isNarratorUnmuted = true; // Voice is unmuted by default
+    let hasScrolledIntoView = false; // Flag to play only when scrolled into view
     let sceneTimer = null;
     let progressInterval = null;
     let currentProgress = 0;
@@ -658,6 +659,15 @@ window.addEventListener('touchmove', (e) => {
     const stepBtns = document.querySelectorAll(".sim-step-btn");
 
     if (!viewport || !subtitle) return; // safety check
+
+    // Initialize voice toggle UI to active state on load
+    if (voiceToggleBtn) {
+      voiceToggleBtn.classList.add("active");
+      const icon = voiceToggleBtn.querySelector("i");
+      const label = voiceToggleBtn.querySelector(".voice-label");
+      if (icon) icon.className = "fa-solid fa-volume-high";
+      if (label) label.innerText = "Voice: On";
+    }
 
     // Setup global benefit click function
     const benefitsHotspots = [
@@ -751,7 +761,7 @@ window.addEventListener('touchmove', (e) => {
       }
 
       // Handle Narration Voice Speech
-      if (isNarratorUnmuted) {
+      if (isNarratorUnmuted && hasScrolledIntoView) {
         speakText(scene.subtitle);
         waveform.classList.add("playing");
       } else {
@@ -791,6 +801,7 @@ window.addEventListener('touchmove', (e) => {
     function togglePlayState() {
       isPlaying = !isPlaying;
       if (isPlaying) {
+        hasScrolledIntoView = true;
         playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
         playBtn.setAttribute("aria-label", "Pause Story");
         if (isNarratorUnmuted) {
@@ -811,12 +822,14 @@ window.addEventListener('touchmove', (e) => {
     playBtn.addEventListener("click", togglePlayState);
     prevBtn.addEventListener("click", () => {
       isPlaying = false; // stop auto play on manual action
+      hasScrolledIntoView = true;
       playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
       waveform.classList.remove("playing");
       retreatScene();
     });
     nextBtn.addEventListener("click", () => {
       isPlaying = false;
+      hasScrolledIntoView = true;
       playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
       waveform.classList.remove("playing");
       advanceScene();
@@ -846,6 +859,7 @@ window.addEventListener('touchmove', (e) => {
     stepBtns.forEach(btn => {
       btn.addEventListener("click", (e) => {
         isPlaying = false;
+        hasScrolledIntoView = true;
         playBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
         waveform.classList.remove("playing");
         const targetIdx = parseInt(btn.getAttribute("data-scene"));
@@ -862,6 +876,35 @@ window.addEventListener('touchmove', (e) => {
 
     // Initialize first scene
     loadScene(0);
+
+    // Auto-play and speak only when the simulator section is scrolled into view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          hasScrolledIntoView = true;
+          isPlaying = true;
+
+          // Update Play/Pause button UI to playing state
+          if (playBtn) {
+            playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            playBtn.setAttribute("aria-label", "Pause Story");
+          }
+
+          // Trigger scene load (starts narration voice and autoplay)
+          loadScene(currentScene);
+
+          // Stop observing to let the user control play/pause manually from now on
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15 // Start when 15% of the simulator section is visible
+    });
+
+    const simSection = document.getElementById("practice-simulator");
+    if (simSection) {
+      observer.observe(simSection);
+    }
   })();
 
   // ─── Ultra-Premium Cinematic Splash Intro Controller ───
