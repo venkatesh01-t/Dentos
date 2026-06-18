@@ -257,11 +257,9 @@
       color: var(--text-primary);
     }
     .logo-icon {
-      width: 38px; height: 38px; border-radius: 10px;
-      background: var(--grad-primary);
+      width: 44px; height: 44px;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.1rem;
-      color: #ffffff;
     }
     .nav-links { display:flex; gap:2.2rem; list-style:none; }
     .nav-links a { color:var(--text-secondary); font-weight:500; text-decoration:none; transition:var(--transition); font-size:.97rem; }
@@ -1013,7 +1011,7 @@
       .stat-value { font-size:1.4rem; }
       .sec-header h2 { font-size:1.75rem; }
       .logo { font-size:1.25rem; }
-      .logo-icon { width:32px; height:32px; font-size:.95rem; }
+      .logo-icon { width:38px; height:38px; }
       .btn { padding:.75rem 1.5rem; font-size:.92rem; }
       .badge { font-size:.67rem; padding:.2rem .6rem; }
       .feat-icon-wrap { width:44px; height:44px; font-size:1.2rem; }
@@ -1041,7 +1039,7 @@
       :root { --nav-h: 58px; }
       nav { height: var(--nav-h); }
       .logo { font-size:1.1rem; }
-      .logo-icon { width:30px; height:30px; font-size:.88rem; border-radius:8px; }
+      .logo-icon { width:34px; height:34px; }
       .hamburger { width:36px; height:36px; }
       .mobile-nav { padding:1rem 1.25rem 1.5rem; }
       .mobile-nav a { font-size:.95rem; padding:.7rem 0; }
@@ -1064,7 +1062,7 @@
       :root { --nav-h: 54px; }
       nav { height: var(--nav-h); }
       .logo { font-size:1rem; }
-      .logo-icon { width:28px; height:28px; font-size:.82rem; border-radius:7px; }
+      .logo-icon { width:30px; height:30px; }
       .hamburger { width:34px; height:34px; padding:7px; }
       .mobile-nav { padding:.85rem 1rem 1.2rem; }
       .mobile-nav a { font-size:.9rem; padding:.65rem 0; }
@@ -3689,30 +3687,20 @@
     #sp-scene-5.active .brand-orb-wrap { animation:spOrbEntry 0.85s cubic-bezier(0.34,1.56,0.64,1) both; }
     @keyframes spOrbEntry { from { transform:scale(0.45); opacity:0; } to { transform:scale(1); opacity:1; } }
     .brand-orb {
-      width: 116px;
-      height: 116px;
-      border-radius: 50%;
-      background: linear-gradient(135deg,#38bdf8 0%,#0ea5e9 50%,#0284c7 100%);
+      width: 150px;
+      height: 150px;
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3rem;
-      color: #fff;
       position: relative;
       z-index: 3;
       animation: spOrbGlow 2.2s ease-in-out infinite alternate;
     }
     @keyframes spOrbGlow {
-      from { box-shadow:0 0 50px rgba(14,165,233,0.5),0 0 100px rgba(14,165,233,0.18); transform:scale(1); }
-      to   { box-shadow:0 0 80px rgba(14,165,233,0.75),0 0 180px rgba(14,165,233,0.3); transform:scale(1.05); }
+      from { filter: drop-shadow(0 0 25px rgba(14,165,233,0.4)) drop-shadow(0 0 50px rgba(14,165,233,0.15)); transform:scale(1); }
+      to   { filter: drop-shadow(0 0 40px rgba(14,165,233,0.6)) drop-shadow(0 0 90px rgba(14,165,233,0.25)); transform:scale(1.05); }
     }
-    .brand-ring { position:absolute; border-radius:50%; border:1px solid rgba(56,189,248,0.22); animation:spBrandRing 3.2s ease-out infinite; }
-    .brand-ring.br-1 { width:170px; height:170px; animation-delay:0s; }
-    .brand-ring.br-2 { width:250px; height:250px; animation-delay:1.07s; }
-    .brand-ring.br-3 { width:350px; height:350px; animation-delay:2.13s; }
-    @keyframes spBrandRing { 0% { opacity:0.55; transform:scale(0.82); } 100% { opacity:0; transform:scale(1.22); } }
-    .brand-bloom { position:absolute; width:340px; height:340px; border-radius:50%; background:radial-gradient(circle,rgba(14,165,233,0.22) 0%,transparent 70%); filter:blur(35px); z-index:1; animation:spBloom 2.2s ease-in-out infinite alternate; }
-    @keyframes spBloom { from { opacity:0.55; transform:scale(0.88); } to { opacity:1; transform:scale(1.12); } }
     .brand-wordmark {
       font-family: var(--font-display);
       font-size: clamp(1.8rem,3vw,2.2rem);
@@ -3895,6 +3883,31 @@
         padding: 0.4rem 0.8rem !important;
         font-size: 0.65rem !important;
       }
+    }
+
+    /* ─── BRAND LOGO IMAGE ALIGNMENTS ─── */
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .brand-orb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .closing-logo-img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+    
+    .benefit-mockup-logo {
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
     }
 
 

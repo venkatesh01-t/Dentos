@@ -542,7 +542,7 @@ window.addEventListener('touchmove', (e) => {
             <div class="benefits-dashboard-mockup">
               <div class="benefit-mockup-header">
                 <div class="benefit-mockup-title">
-                  <i class="fa-solid fa-tooth" style="color:var(--c-blue);"></i>
+                  <img src="logo.ico" alt="Logo" class="benefit-mockup-logo" />
                   <span>Clinic Insights</span>
                 </div>
                 <div class="results-stars-float-wrap">
@@ -620,7 +620,7 @@ window.addEventListener('touchmove', (e) => {
           <div class="sim-scene-content">
             <div class="closing-cta-card">
               <div class="closing-logo-wrap">
-                <i class="fa-solid fa-tooth"></i>
+                <img src="logo.ico" alt="DentalOS Logo" class="closing-logo-img" />
               </div>
               <span class="closing-cta-h3">Get DentalOS Today</span>
               <div class="closing-bullet-points">
