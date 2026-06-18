@@ -3801,4 +3801,81 @@
       .brand-ring.br-3 { display:none; }
     }
 
+    /* ─── Ultra-Premium Splash Screen Mobile & Height Adaptability ─── */
+    @media (max-width: 768px), (max-height: 750px) {
+      #sp-text-layer {
+        bottom: 6% !important;
+        min-height: 100px !important;
+      }
+      .sp-headline {
+        font-size: 1.35rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+      .sp-subline {
+        font-size: 0.82rem !important;
+      }
+      .chaos-world {
+        transform: scale(0.75);
+        transform-origin: center center;
+      }
+      .neural-world {
+        transform: scale(0.75);
+        transform-origin: center center;
+      }
+      .dash-glass-frame {
+        transform: scale(0.72) translateY(0) !important;
+        transform-origin: center center;
+      }
+      #sp-scene-3.active .dash-glass-frame {
+        transform: scale(0.72) translateY(0) !important;
+      }
+      .kpi-world {
+        transform: scale(0.75);
+        transform-origin: center center;
+        gap: 0.85rem !important;
+      }
+      .brand-world {
+        transform: scale(0.85);
+        transform-origin: center center;
+      }
+    }
+
+    @media (max-width: 480px), (max-height: 640px) {
+      #sp-text-layer {
+        bottom: 3% !important;
+        min-height: 80px !important;
+      }
+      .sp-headline {
+        font-size: 1.15rem !important;
+      }
+      .sp-subline {
+        font-size: 0.75rem !important;
+      }
+      .chaos-world {
+        transform: scale(0.58);
+      }
+      .neural-world {
+        transform: scale(0.58);
+      }
+      .dash-glass-frame {
+        transform: scale(0.55) translateY(0) !important;
+      }
+      #sp-scene-3.active .dash-glass-frame {
+        transform: scale(0.55) translateY(0) !important;
+      }
+      .kpi-world {
+        transform: scale(0.6);
+        gap: 0.6rem !important;
+      }
+      .brand-world {
+        transform: scale(0.7);
+      }
+      #splash-skip-btn {
+        top: 1rem !important;
+        right: 1rem !important;
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.65rem !important;
+      }
+    }
+
 

@@ -1,3 +1,15 @@
+// Force scroll restoration to manual so browsers do not scroll dynamically on reload
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// Prevent touch scroll on mobile devices while splash screen is active (especially iOS Safari)
+window.addEventListener('touchmove', (e) => {
+  if (document.body.classList.contains('scroll-locked')) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
 // ─── Smooth Scroll Engine (lerp-eased, Lenis-style buttery scroll) ───
   // Defined first so other scroll-driven systems (parallax, navbar shadow,
   // scroll-progress morph) can all read from one consistent virtual scroll value.
