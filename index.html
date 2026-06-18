@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentalOS — The Complete Dental Clinic Management Platform</title>
+  <meta name="description" content="DentalOS is the all-in-one dental clinic software with e-prescriptions, inventory alerts, role-based access for 25 users, appointment tracking, CSV exports, lab print workflows, and more." />
+  <meta name="keywords" content="dental software, clinic management, e-prescription, dental EHR, appointment booking, lab work, inventory management, role based login" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════ ULTRA-PREMIUM CINEMATIC STARTUP SPLASH ══════════════════════════ -->
+<div id="startup-intro-splash">
+
+  <!-- Layer 1: Animated gradient background -->
+  <div id="sp-bg"></div>
+
+  <!-- Layer 2: JS-generated floating particle field -->
+  <div id="sp-particles"></div>
+
+  <!-- ─── Scene 1: Clinic Chaos (0–3s) ─── -->
+  <div id="sp-scene-1" class="sp-scene active">
+    <div class="chaos-world">
+      <div class="chaos-item ci-1"><i class="fa-solid fa-file-invoice"></i><span>Patient File #4821</span></div>
+      <div class="chaos-item ci-2"><i class="fa-solid fa-calendar-xmark"></i><span>Missed Appointment</span></div>
+      <div class="chaos-item ci-3"><i class="fa-solid fa-file-medical"></i><span>Prescription Lost</span></div>
+      <div class="chaos-item ci-4"><i class="fa-solid fa-clipboard-list"></i><span>Report Overdue</span></div>
+      <div class="chaos-item ci-5"><i class="fa-solid fa-triangle-exclamation"></i><span>Billing Error</span></div>
+      <div class="chaos-item ci-6"><i class="fa-solid fa-file-invoice-dollar"></i><span>Invoice #2201</span></div>
+      <div class="chaos-item ci-7"><i class="fa-solid fa-tooth"></i><span>Record #882</span></div>
+      <div class="chaos-item ci-8"><i class="fa-regular fa-clock"></i><span>Delayed</span></div>
+      <div class="frag-block fb-1"></div>
+      <div class="frag-block fb-2"></div>
+      <div class="frag-block fb-3"></div>
+      <div class="frag-block fb-4"></div>
+      <div class="warn-ping wp-1"></div>
+      <div class="warn-ping wp-2"></div>
+      <div class="warn-ping wp-3"></div>
+    </div>
+  </div>
+
+  <!-- ─── Scene 2: Neural Transformation (3–6s) ─── -->
+  <div id="sp-scene-2" class="sp-scene">
+    <div class="neural-world">
+      <div class="neural-hub">
+        <div class="hub-core"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="hub-ring ring-1"></div>
+        <div class="hub-ring ring-2"></div>
+        <div class="hub-ring ring-3"></div>
+      </div>
+      <div class="data-stream ds-1"></div>
+      <div class="data-stream ds-2"></div>
+      <div class="data-stream ds-3"></div>
+      <div class="data-stream ds-4"></div>
+      <div class="data-stream ds-5"></div>
+      <div class="data-stream ds-6"></div>
+      <div class="data-node dn-1"><i class="fa-solid fa-address-book"></i></div>
+      <div class="data-node dn-2"><i class="fa-solid fa-calendar-day"></i></div>
+      <div class="data-node dn-3"><i class="fa-solid fa-stethoscope"></i></div>
+      <div class="data-node dn-4"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+      <div class="data-node dn-5"><i class="fa-solid fa-chart-line"></i></div>
+    </div>
+  </div>
+
+  <!-- ─── Scene 3: Dashboard Assembly (6–10s) ─── -->
+  <div id="sp-scene-3" class="sp-scene">
+    <div class="dashboard-world">
+      <div class="dash-glass-frame">
+        <div class="dash-topbar">
+          <div class="dtb-dot red"></div>
+          <div class="dtb-dot yellow"></div>
+          <div class="dtb-dot green"></div>
+          <span class="dtb-title"><i class="fa-solid fa-tooth"></i> DentalOS — Command Center</span>
+          <div class="dtb-status"><span class="status-dot"></span>Live</div>
+        </div>
+        <div class="dash-body">
+          <div class="dash-sidebar">
+            <div class="dsb-item dsb-active"><i class="fa-solid fa-house-medical"></i><span>Overview</span></div>
+            <div class="dsb-item"><i class="fa-solid fa-address-book"></i><span>Patients</span></div>
+            <div class="dsb-item"><i class="fa-solid fa-calendar-day"></i><span>Appointments</span></div>
+            <div class="dsb-item"><i class="fa-solid fa-receipt"></i><span>Billing</span></div>
+            <div class="dsb-item"><i class="fa-solid fa-chart-line"></i><span>Reports</span></div>
+          </div>
+          <div class="dash-main">
+            <div class="dm-row dm-stats-row">
+              <div class="dm-stat-card dmc-1">
+                <div class="dmc-icon" style="color:#38bdf8;background:rgba(56,189,248,.1)"><i class="fa-solid fa-users"></i></div>
+                <div class="dmc-info"><div class="dmc-val">1,248</div><div class="dmc-lbl">Active Patients</div></div>
+              </div>
+              <div class="dm-stat-card dmc-2">
+                <div class="dmc-icon" style="color:#34d399;background:rgba(52,211,153,.1)"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="dmc-info"><div class="dmc-val">38</div><div class="dmc-lbl">Today's Appts</div></div>
+              </div>
+              <div class="dm-stat-card dmc-3">
+                <div class="dmc-icon" style="color:#a78bfa;background:rgba(167,139,250,.1)"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                <div class="dmc-info"><div class="dmc-val">&#8377;84,200</div><div class="dmc-lbl">Month Revenue</div></div>
+              </div>
+            </div>
+            <div class="dm-row dm-charts-row">
+              <div class="dm-chart-card">
+                <div class="dc-label">Revenue Trend</div>
+                <div class="dc-bars">
+                  <div class="dc-bar" style="--h:55%"></div>
+                  <div class="dc-bar" style="--h:72%"></div>
+                  <div class="dc-bar" style="--h:48%"></div>
+                  <div class="dc-bar" style="--h:88%"></div>
+                  <div class="dc-bar dc-bar-active" style="--h:95%"></div>
+                </div>
+              </div>
+              <div class="dm-queue-card">
+                <div class="dc-label">Patient Queue</div>
+                <div class="dm-queue-list">
+                  <div class="dq-item">
+                    <div class="dq-avatar" style="background:rgba(56,189,248,.15);color:#38bdf8">R</div>
+                    <div><div class="dq-name">Ravi S.</div><div class="dq-time">10:30 AM</div></div>
+                    <div class="dq-badge dqb-confirmed">Confirmed</div>
+                  </div>
+                  <div class="dq-item">
+                    <div class="dq-avatar" style="background:rgba(52,211,153,.15);color:#34d399">M</div>
+                    <div><div class="dq-name">Meena K.</div><div class="dq-time">11:00 AM</div></div>
+                    <div class="dq-badge dqb-pending">Pending</div>
+                  </div>
+                  <div class="dq-item">
+                    <div class="dq-avatar" style="background:rgba(167,139,250,.15);color:#a78bfa">A</div>
+                    <div><div class="dq-name">Arjun P.</div><div class="dq-time">11:30 AM</div></div>
+                    <div class="dq-badge dqb-confirmed">Confirmed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Scene 4: KPI Impact (10–13s) ─── -->
+  <div id="sp-scene-4" class="sp-scene">
+    <div class="kpi-world">
+      <div class="kpi-card kc-1">
+        <div class="kc-icon-wrap"><i class="fa-solid fa-file-circle-minus"></i></div>
+        <div class="kc-number"><span id="sp-kpi-1">0</span>%</div>
+        <div class="kc-label">Less Paperwork</div>
+        <div class="kc-sublabel">Documents digitized &amp; automated</div>
+        <div class="kc-glow"></div>
+      </div>
+      <div class="kpi-card kc-2">
+        <div class="kc-icon-wrap"><i class="fa-solid fa-gauge-high"></i></div>
+        <div class="kc-number"><span id="sp-kpi-2">0</span>&times;</div>
+        <div class="kc-label">Faster Operations</div>
+        <div class="kc-sublabel">From check-in to discharge</div>
+        <div class="kc-glow"></div>
+      </div>
+      <div class="kpi-card kc-3">
+        <div class="kc-icon-wrap"><i class="fa-solid fa-route"></i></div>
+        <div class="kc-number">Easy</div>
+        <div class="kc-label">Tracking &amp; Management</div>
+        <div class="kc-sublabel">One dashboard for everything</div>
+        <div class="kc-glow"></div>
+      </div>
+      <div class="kpi-card kc-4">
+        <div class="kc-icon-wrap"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <div class="kc-number">Higher</div>
+        <div class="kc-label">Team Productivity</div>
+        <div class="kc-sublabel">Staff focused on patients, not paperwork</div>
+        <div class="kc-glow"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Scene 5: Brand Portal (13–15s) ─── -->
+  <div id="sp-scene-5" class="sp-scene">
+    <div class="brand-world">
+      <div class="brand-orb-wrap">
+        <div class="brand-orb"><i class="fa-solid fa-tooth"></i></div>
+        <div class="brand-ring br-1"></div>
+        <div class="brand-ring br-2"></div>
+        <div class="brand-ring br-3"></div>
+        <div class="brand-bloom"></div>
+      </div>
+      <div class="brand-wordmark">DentalOS</div>
+    </div>
+  </div>
+
+  <!-- ─── Text Overlay Layer ─── -->
+  <div id="sp-text-layer">
+    <div class="sp-text-block sp-tb-1 sp-tb-active">
+      <h2 class="sp-headline">Your Practice Deserves Better</h2>
+      <p class="sp-subline">Growth shouldn't create chaos.</p>
+    </div>
+    <div class="sp-text-block sp-tb-2">
+      <h2 class="sp-headline">Welcome to the Future of<br>Dental Practice Management</h2>
+      <p class="sp-subline">Secure. Intelligent. Collaborative.</p>
+    </div>
+    <div class="sp-text-block sp-tb-3">
+      <h2 class="sp-headline sp-headline-grad">Everything You Need.<br>In One Platform.</h2>
+      <p class="sp-subline">Complete visibility — patients, billing, analytics.</p>
+    </div>
+    <div class="sp-text-block sp-tb-4">
+      <h2 class="sp-headline">Real Results. Real Impact.</h2>
+      <p class="sp-subline">Clinics running DentalOS save hours every single day.</p>
+    </div>
+    <div class="sp-text-block sp-tb-5">
+      <h2 class="sp-headline sp-headline-grad">Run Your Dental Practice Smarter</h2>
+      <p class="sp-subline">Manage Patients, Appointments, Billing, and Reports with Ease.</p>
+    </div>
+  </div>
+
+  <!-- ─── Progress Bar ─── -->
+  <div id="sp-progress-wrap"><div id="sp-progress-bar"></div></div>
+
+  <!-- ─── Skip Button ─── -->
+  <button id="splash-skip-btn" aria-label="Skip Intro Animation">Skip Intro <i class="fa-solid fa-angles-right"></i></button>
+
+</div>
+
+<!-- ══════════════════════════ NAV ══════════════════════════ -->
+<nav id="top-nav">
+  <div class="container nav-inner">
+    <div class="logo" data-reveal="fade-in">
+      <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+      DentalOS
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#roles">Access Control</a></li>
+      <li><a href="#workflow">Workflow</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#pricing" class="btn btn-outline" style="padding:.65rem 1.4rem;font-size:.92rem;">Book Demo</a>
+      <a href="#pricing" class="btn btn-primary" style="padding:.65rem 1.4rem;font-size:.92rem;"><i class="fa-solid fa-bolt"></i> Get Started Free</a>
+    </div>
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav Drawer -->
+<div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="#features" class="mobile-nav-link">Features</a>
+  <a href="#roles" class="mobile-nav-link">Access Control</a>
+  <a href="#workflow" class="mobile-nav-link">Workflow</a>
+  <a href="#notifications" class="mobile-nav-link">Notifications</a>
+  <a href="#pricing" class="mobile-nav-link">Pricing</a>
+  <div class="mobile-nav-cta">
+    <a href="#pricing" class="btn btn-outline">Book Demo</a>
+    <a href="#pricing" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Get Started</a>
+  </div>
+</div>
+
+<div id="smooth-wrapper">
+
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow" data-reveal="slide-up" style="--reveal-delay:0s;">
+          <span class="badge badge-blue"><i class="fa-solid fa-star"></i> Trusted by Dental Clinics</span>
+          <span class="badge badge-green"><i class="fa-solid fa-shield-halved"></i> Secure & Private</span>
+        </div>
+        <h1 data-reveal="slide-up" style="--reveal-delay:0.1s;">The Complete<br><span class="grad-text">Dental Clinic</span><br>Operating System</h1>
+        <p class="lead" data-reveal="fade-in" style="--reveal-delay:0.25s;">One powerful platform for appointments, e-prescriptions, billing, lab workflows, inventory alerts, role-based access for your entire team of up to 25 — and everything in between.</p>
+        <div class="hero-actions" data-reveal="slide-up" style="--reveal-delay:0.35s;">
+          <a href="#pricing" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+          <a href="#workflow" class="btn btn-outline" id="btn-see-how-works"><i class="fa-solid fa-play"></i> See How it Works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item" data-reveal="slide-up-sm" style="--reveal-delay:0.45s;">
+            <div class="stat-value grad-text">25</div>
+            <div class="stat-label">Users Per License</div>
+          </div>
+          <div class="stat-item" data-reveal="slide-up-sm" style="--reveal-delay:0.52s;">
+            <div class="stat-value grad-text">15+</div>
+            <div class="stat-label">Core Modules</div>
+          </div>
+          <div class="stat-item" data-reveal="slide-up-sm" style="--reveal-delay:0.59s;">
+            <div class="stat-value grad-text">100%</div>
+            <div class="stat-label">Role Protected</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Preview -->
+      <div class="preview-wrap" data-reveal="zoom-in" style="--reveal-delay:0.2s;">
+        <!-- Floating badges -->
+        <div class="float-badge fb-1">
+          <div class="fb-icon" style="background:rgba(52,211,153,.15);color:var(--c-green);"><i class="fa-solid fa-bell"></i></div>
+          <div><div style="font-size:.68rem;color:var(--text-muted);">Low Stock Alert</div><div>Gauze — 5 left</div></div>
+        </div>
+        <div class="float-badge fb-2">
+          <div class="fb-icon" style="background:rgba(79,142,255,.15);color:var(--c-blue);"><i class="fa-solid fa-calendar-check"></i></div>
+          <div><div style="font-size:.68rem;color:var(--text-muted);">Appointment</div><div>Confirmed ✓</div></div>
+        </div>
+        <div class="float-badge fb-3" style="animation-delay:.3s">
+          <div class="fb-icon" style="background:rgba(251,191,36,.15);color:var(--c-amber);"><i class="fa-solid fa-file-csv"></i></div>
+          <div><div style="font-size:.68rem;color:var(--text-muted);">Export</div><div>CSV Ready</div></div>
+        </div>
+        <div class="float-badge fb-4" style="animation-delay:.5s">
+          <div class="fb-icon" style="background:rgba(244,63,94,.15);color:var(--c-rose);"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+          <div><div style="font-size:.68rem;color:var(--text-muted);">e-Prescription</div><div>Sent to Patient</div></div>
+        </div>
+
+        <div class="preview-card">
+          <div class="prev-header">
+            <div class="prev-dot" style="background:#ef4444;"></div>
+            <div class="prev-dot" style="background:#f59e0b;"></div>
+            <div class="prev-dot" style="background:#10b981;"></div>
+            <span class="prev-title">DentalOS — Dashboard</span>
+          </div>
+          <img
+            src="dashboard_screenshot.png"
+            alt="DentalOS Dashboard Screenshot"
+            class="prev-screenshot"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="prev-screenshot-placeholder" style="display:none;">
+            <i class="fa-solid fa-image"></i>
+            <p>Place your dashboard screenshot here as<br><strong>dashboard_screenshot.png</strong><br>in the clinic folder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ STATS STRIP ══════════════════════════ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-blk" data-reveal="slide-up-sm"><div class="num grad-text">25</div><div class="lbl">Users per single license</div></div>
+      <div class="stat-blk" data-reveal="slide-up-sm"><div class="num grad-text">15+</div><div class="lbl">Integrated modules</div></div>
+      <div class="stat-blk" data-reveal="slide-up-sm"><div class="num grad-text">3</div><div class="lbl">Role levels (Admin, Doctor, Worker)</div></div>
+      <div class="stat-blk" data-reveal="slide-up-sm"><div class="num grad-text">100%</div><div class="lbl">Data exportable to CSV / Excel</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ INTERACTIVE PRACTICE SIMULATOR ══════════════════════════ -->
+<section id="practice-simulator" class="sim-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-new"><i class="fa-solid fa-circle-play"></i> Interactive Story</span></div>
+      <h2>From Chaos to Complete Calm</h2>
+      <p>Experience how DentalOS transforms the daily grind of running a clinic. Click play or select any scene below.</p>
+    </div>
+
+    <!-- Simulator Container -->
+    <div class="sim-container" data-reveal="zoom-in">
+      <!-- Steps Navigation Strip -->
+      <div class="sim-steps-nav">
+        <button class="sim-step-btn active" data-scene="0">
+          <span class="step-badge">1</span>
+          <span class="step-text">The Problem</span>
+        </button>
+        <button class="sim-step-btn" data-scene="1">
+          <span class="step-badge">2</span>
+          <span class="step-text">Challenges</span>
+        </button>
+        <button class="sim-step-btn" data-scene="2">
+          <span class="step-badge">3</span>
+          <span class="step-text">The Solution</span>
+        </button>
+        <button class="sim-step-btn" data-scene="3">
+          <span class="step-badge">4</span>
+          <span class="step-text">Key Benefits</span>
+        </button>
+        <button class="sim-step-btn" data-scene="4">
+          <span class="step-badge">5</span>
+          <span class="step-text">Results</span>
+        </button>
+        <button class="sim-step-btn" data-scene="5">
+          <span class="step-badge">6</span>
+          <span class="step-text">Closing</span>
+        </button>
+      </div>
+
+      <!-- Simulator Workspace -->
+      <div class="sim-workspace">
+        
+        <!-- Left Side: Narrator Console -->
+        <div class="sim-console">
+          <div class="console-header">
+            <span class="console-title"><i class="fa-solid fa-terminal"></i> Narrator Console</span>
+            <div class="voice-toggle-wrap">
+              <button id="narrator-voice-toggle" class="btn-voice-toggle" aria-label="Mute/Unmute Narration">
+                <i class="fa-solid fa-volume-xmark"></i>
+                <span class="voice-label">Unmute Voice</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="console-body">
+            <!-- Voiceover Text / Subtitles -->
+            <div class="console-subtitle-wrap">
+              <p class="console-subtitle" id="sim-subtitle">Managing a dental clinic shouldn't mean spending hours on paperwork. Yet many clinics still struggle with manual records, scattered patient data, and time-consuming administrative tasks.</p>
+            </div>
+            
+            <!-- Live Audio Visual Waveform -->
+            <div class="console-audio-visualizer" id="sim-waveform">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </div>
+          
+          <div class="console-footer">
+            <div class="console-controls">
+              <button id="sim-prev-btn" class="ctrl-btn" aria-label="Previous Scene"><i class="fa-solid fa-backward"></i></button>
+              <button id="sim-play-btn" class="ctrl-btn play-pause-btn" aria-label="Play/Pause Story"><i class="fa-solid fa-play"></i></button>
+              <button id="sim-next-btn" class="ctrl-btn" aria-label="Next Scene"><i class="fa-solid fa-forward"></i></button>
+            </div>
+            <div class="autoplay-progress">
+              <div class="autoplay-progress-bar" id="sim-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Visual viewport rendering dynamic scenes -->
+        <div class="sim-viewport" id="sim-viewport">
+          <!-- Active content injected dynamically by script.js -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ ALL FEATURES ══════════════════════════ -->
+<section id="features" class="features-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-blue"><i class="fa-solid fa-layer-group"></i> Full Feature Set</span></div>
+      <h2>Everything your clinic<br>needs, in one place</h2>
+      <p>Every module is purpose-built for dental clinics. No bloat. No missing pieces.</p>
+    </div>
+    <div class="feat-grid">
+
+      <!-- e-Prescription -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(79,142,255,.12);color:var(--c-blue);">
+          <i class="fa-solid fa-prescription-bottle-medical"></i>
+        </div>
+        <h3>e-Prescriptions <span class="new-pill">Core</span></h3>
+        <p>Generate digital prescriptions in seconds using customizable medication templates with dosage, frequency, and duration pre-filled. Print or share digitally.</p>
+      </div>
+
+      <!-- Inventory + Low Stock -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(244,63,94,.12);color:var(--c-rose);">
+          <i class="fa-solid fa-boxes-stacked"></i>
+        </div>
+        <h3>Inventory + Low Stock Alerts <span class="new-pill">Smart</span></h3>
+        <p>Track medicines, equipment, and supplies in real-time. Automatically trigger alerts when stock levels fall below threshold — never run out of critical items again.</p>
+      </div>
+
+      <!-- Role-Based Login -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(129,140,248,.12);color:var(--c-violet);">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Role-Based Login</h3>
+        <p>Secure login with distinct roles: Admin, Doctor, and Worker. Each role sees only what they need — protecting sensitive clinical and financial data.</p>
+      </div>
+
+      <!-- 25-User Access -->
+      <div class="feat-card wide" data-reveal="slide-up-sm">
+        <div class="feat-wide-inner">
+          <div class="feat-icon-wrap" style="background:rgba(34,211,238,.12);color:var(--c-cyan);width:60px;height:60px;flex-shrink:0;font-size:1.6rem;">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <div>
+            <h3 style="font-size:1.3rem;">Single License — Up to 25 Users <span class="new-pill">Team</span></h3>
+            <p>One installation supports your entire clinic team. Grant secure access to all doctors, receptionists, and assistants under a single license with fine-grained role-based controls per user.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Appointments -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(52,211,153,.12);color:var(--c-green);">
+          <i class="fa-regular fa-calendar-check"></i>
+        </div>
+        <h3>Easy Appointment Booking & Tracking</h3>
+        <p>Book, reschedule, and track patient appointments in real-time. Status updates (Pending → Confirmed → Completed) ensure nothing falls through the cracks.</p>
+      </div>
+
+      <!-- Patient History -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(79,142,255,.12);color:var(--c-blue);">
+          <i class="fa-solid fa-file-medical"></i>
+        </div>
+        <h3>Easy Patient History & Details</h3>
+        <p>Instantly pull up full patient profiles: demographics, all past visits, prescriptions, X-rays, uploads, treatment records, and billing history — all in one view.</p>
+      </div>
+
+      <!-- Report Analysis -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(251,191,36,.12);color:var(--c-amber);">
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <h3>Report Analysis & Analytics</h3>
+        <p>Powerful dashboards showing daily, monthly, and yearly revenue charts, top treatments, patient frequency, pending bills, and doctor performance metrics.</p>
+      </div>
+
+      <!-- Notifications -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(244,63,94,.12);color:var(--c-rose);">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <h3>Smart Notifications</h3>
+        <p>Real-time in-app alerts for upcoming appointments, low inventory, new patient arrivals, and lab order status changes. Never miss a critical event.</p>
+      </div>
+
+      <!-- CSV Export -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(52,211,153,.12);color:var(--c-green);">
+          <i class="fa-solid fa-file-csv"></i>
+        </div>
+        <h3>Export All Data to CSV / Excel</h3>
+        <p>Export patients, billing invoices, appointments, inventory, and reports — all in CSV format, ready for Excel. Perfect for accounting, audits, and backups.</p>
+      </div>
+
+      <!-- Lab Work Print Workflow -->
+      <div class="feat-card wide" data-reveal="slide-up-sm">
+        <div class="feat-wide-inner">
+          <div class="feat-icon-wrap" style="background:rgba(34,211,238,.12);color:var(--c-cyan);width:60px;height:60px;flex-shrink:0;font-size:1.6rem;">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <div>
+            <h3 style="font-size:1.3rem;">Lab Work Print Workflow <span class="new-pill">New</span></h3>
+            <p>Create and track lab orders for crowns, bridges, and prosthetics. When the order is ready, print a professional lab work slip complete with patient info, work type, lab details, and delivery date — ready to hand directly to your lab partner.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Billing -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(251,191,36,.12);color:var(--c-amber);">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+        </div>
+        <h3>Automated Billing & Invoicing</h3>
+        <p>Generate professional A4 invoices directly from treatment records. Track pending and paid status, and print or share receipts instantly.</p>
+      </div>
+
+      <!-- Doctor Management -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(129,140,248,.12);color:var(--c-violet);">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <h3>Doctor Management</h3>
+        <p>Manage doctor profiles, specializations, working hours, digital signatures, and experience. Multi-doctor scheduling support built in.</p>
+      </div>
+
+      <!-- AI X-Ray -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(79,142,255,.12);color:var(--c-blue);">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>AI X-Ray Analysis <span class="new-pill">AI</span></h3>
+        <p>Automatically detect potential cavities, bone loss, and anomalies the moment X-rays are uploaded. AI-assisted, doctor-confirmed.</p>
+      </div>
+
+      <!-- Patient Portal -->
+      <div class="feat-card" data-reveal="slide-up-sm">
+        <div class="feat-icon-wrap" style="background:rgba(52,211,153,.12);color:var(--c-green);">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <h3>Patient Self-Service Portal</h3>
+        <p>Patients can book appointments, view their treatment history, download prescriptions, and check outstanding invoices — anytime, from any device.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ ROLE-BASED ACCESS ══════════════════════════ -->
+<section id="roles" class="roles-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-cyan"><i class="fa-solid fa-shield-halved"></i> Access Control</span></div>
+      <h2>The right access,<br>for the right person</h2>
+      <p>Three distinct roles ensure your staff see only what they need, keeping clinical and financial data safe.</p>
+    </div>
+    <div class="roles-grid">
+      <!-- Admin -->
+      <div class="role-card role-admin" data-reveal="slide-up-sm">
+        <div class="role-avatar" style="background:rgba(79,142,255,.15);color:var(--c-blue);">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <h3 class="grad-text">Admin</h3>
+        <div class="role-title">Full Clinic Control</div>
+        <ul class="perms-list">
+          <li><i class="fa-solid fa-circle-check perm-check"></i> All modules & reports</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> User & role management</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Billing & invoicing</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Inventory management</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> CSV export of all data</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Database backup</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Clinic settings & profile</li>
+        </ul>
+      </div>
+      <!-- Doctor -->
+      <div class="role-card role-doctor" data-reveal="slide-up-sm">
+        <div class="role-avatar" style="background:rgba(34,211,238,.15);color:var(--c-cyan);">
+          <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <h3 style="color:var(--c-cyan);">Doctor</h3>
+        <div class="role-title">Clinical Access</div>
+        <ul class="perms-list">
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Patient history & records</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> e-Prescription creation</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Today's patient queue</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Lab work orders</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Upload X-rays & files</li>
+          <li><i class="fa-solid fa-circle-minus perm-partial"></i> View-only billing</li>
+          <li><i class="fa-solid fa-circle-xmark perm-no"></i> User management</li>
+        </ul>
+      </div>
+      <!-- Worker -->
+      <div class="role-card role-worker" data-reveal="slide-up-sm">
+        <div class="role-avatar" style="background:rgba(52,211,153,.15);color:var(--c-green);">
+          <i class="fa-solid fa-person-circle-check"></i>
+        </div>
+        <h3 style="color:var(--c-green);">Worker / Receptionist</h3>
+        <div class="role-title">Front-Desk Operations</div>
+        <ul class="perms-list">
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Appointment booking</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Patient registration</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Today's queue management</li>
+          <li><i class="fa-solid fa-circle-check perm-check"></i> Billing & payment tracking</li>
+          <li><i class="fa-solid fa-circle-minus perm-partial"></i> Limited inventory view</li>
+          <li><i class="fa-solid fa-circle-xmark perm-no"></i> Prescription access</li>
+          <li><i class="fa-solid fa-circle-xmark perm-no"></i> Reports & analytics</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 25 users banner -->
+    <div class="users-banner" data-reveal="zoom-in">
+      <div class="ub-left">
+        <h3>One install. <span class="grad-text">25 team members.</span></h3>
+        <p>Add doctors, receptionists, and assistants under a single license — no per-seat charges.</p>
+      </div>
+      <div class="ub-users">
+        <div class="ub-avatar" style="background:#4f8eff;">A</div>
+        <div class="ub-avatar" style="background:#22d3ee;">D</div>
+        <div class="ub-avatar" style="background:#34d399;">W</div>
+        <div class="ub-avatar" style="background:#818cf8;">D</div>
+        <div class="ub-avatar" style="background:#fbbf24;">W</div>
+        <div class="ub-more">+20</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ WORKFLOW ══════════════════════════ -->
+<section id="workflow" class="workflow-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-green"><i class="fa-solid fa-arrows-turn-to-dots"></i> How it Works</span></div>
+      <h2>A seamless clinic<br>workflow, end-to-end</h2>
+      <p>DentalOS mirrors the natural flow of your clinic — from patient arrival to payment and lab dispatch.</p>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Patient Registration & Appointment</h3>
+          <p>The receptionist registers the patient with full demographics, medical history, and contact details. Appointments are booked instantly and tracked in real-time by status: Pending → Confirmed → Completed.</p>
+          <div class="step-tags"><span class="step-tag">Patient Module</span><span class="step-tag">Appointment Booking</span><span class="step-tag">Status Tracking</span></div>
+        </div>
+      </div>
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Check-In & Today's Queue</h3>
+          <p>When the patient arrives, they're added to "Today's Queue." The doctor can instantly view their full history, previous visits, and all uploaded X-rays and files. Smart notifications alert staff of new arrivals.</p>
+          <div class="step-tags"><span class="step-tag">Daily Queue</span><span class="step-tag">Patient History</span><span class="step-tag">File Uploads</span><span class="step-tag">Notifications</span></div>
+        </div>
+      </div>
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Consultation & e-Prescription</h3>
+          <p>The doctor records the diagnosis, selects treatments from the catalog, and generates a digital e-prescription using medication templates — in seconds. Prescriptions are linked to the visit record permanently.</p>
+          <div class="step-tags"><span class="step-tag">e-Prescription</span><span class="step-tag">Treatment Catalog</span><span class="step-tag">Medication Templates</span></div>
+        </div>
+      </div>
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Lab Work Order & Print</h3>
+          <p>For prosthetics or lab work, the doctor creates a lab order — selecting the work type, lab partner, and due date. The system generates a printable lab slip with all details ready to hand to the lab.</p>
+          <div class="step-tags"><span class="step-tag">Lab Work Orders</span><span class="step-tag">Print Workflow</span><span class="step-tag">Status Tracking</span></div>
+        </div>
+      </div>
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>Billing & Payment</h3>
+          <p>Treatments are automatically pulled into billing. The receptionist generates a professional A4 invoice, marks it as paid on collection, and prints or shares the receipt. Revenue is tracked instantly on the dashboard.</p>
+          <div class="step-tags"><span class="step-tag">A4 Invoice</span><span class="step-tag">Payment Tracking</span><span class="step-tag">Dashboard Analytics</span></div>
+        </div>
+      </div>
+      <div class="flow-step" data-reveal="slide-up-sm">
+        <div class="step-num">06</div>
+        <div class="step-body">
+          <h3>Reports & CSV Export</h3>
+          <p>Admins can view daily, monthly, and yearly analytics at a glance. Any module's data — patients, billing, appointments, inventory — can be exported to CSV with one click for use in Excel or accounting tools.</p>
+          <div class="step-tags"><span class="step-tag">Revenue Reports</span><span class="step-tag">CSV Export</span><span class="step-tag">Excel Compatible</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FEATURE SHOWCASES ══════════════════════════ -->
+<section id="showcase" class="showcase-section">
+  <div class="container">
+
+    <!-- e-Prescription -->
+    <div class="showcase-grid">
+      <div class="showcase-content" data-reveal="slide-left">
+        <span class="badge badge-blue" style="margin-bottom:1rem;"><i class="fa-solid fa-prescription-bottle-medical"></i> e-Prescription</span>
+        <h2>Digital prescriptions,<br>created in <span class="grad-text">10 seconds</span></h2>
+        <p>Say goodbye to handwritten prescriptions. DentalOS lets your doctors generate fully digital prescriptions using pre-loaded medication templates with dosage, frequency, and duration — just select and confirm.</p>
+        <ul class="feature-bullets">
+          <li><i class="fa-solid fa-check-circle"></i> Pre-built medication templates per category (antibiotics, analgesics, etc.)</li>
+          <li><i class="fa-solid fa-check-circle"></i> Linked to visit record — always retrievable</li>
+          <li><i class="fa-solid fa-check-circle"></i> Includes diagnosis, allergies, and advice</li>
+          <li><i class="fa-solid fa-check-circle"></i> Doctor's digital signature on every prescription</li>
+          <li><i class="fa-solid fa-check-circle"></i> Printable & shareable</li>
+        </ul>
+      </div>
+      <div class="showcase-visual" data-reveal="slide-right">
+        <div class="showcase-panel">
+          <div class="panel-title">e-Prescription Preview</div>
+          <div class="rx-header">
+            <div><div class="rx-patient">Rahul Sharma</div><div class="rx-clinic">Age: 34M &nbsp;|&nbsp; Visit: 17 Jun 2026</div></div>
+            <div style="text-align:right;"><div class="rx-clinic">DentalOS Clinic</div><div class="rx-clinic">Dr. A. Kumar, BDS</div></div>
+          </div>
+          <div style="font-size:.72rem;color:var(--text-muted);margin-bottom:.6rem;">Chief Complaint: Toothache #16 &nbsp;|&nbsp; Diagnosis: Irreversible Pulpitis</div>
+          <div class="rx-table-wrap">
+          <table class="rx-table">
+            <thead><tr><th>Drug</th><th>Dosage</th><th>Freq.</th><th>Days</th></tr></thead>
+            <tbody>
+              <tr><td>Amoxicillin 500mg</td><td>1 Cap</td><td>1-0-1</td><td>5 Days</td></tr>
+              <tr><td>Ibuprofen 400mg</td><td>1 Tab</td><td>SOS</td><td>3 Days</td></tr>
+              <tr><td>Metronidazole 400mg</td><td>1 Tab</td><td>1-1-1</td><td>5 Days</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="rx-sig">Dr. A. Kumar &nbsp;|&nbsp; __________</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inventory + Alerts -->
+    <div class="showcase-grid">
+      <div class="showcase-visual" data-reveal="slide-left">
+        <div class="showcase-panel">
+          <div class="panel-title">Inventory Management & Alerts</div>
+          <div class="inv-list">
+            <div class="inv-row">
+              <span class="inv-icon" style="color:var(--c-green);">💊</span>
+              <span class="inv-name">Amoxicillin 500mg</span>
+              <span class="inv-qty" style="color:var(--c-green);">120 caps</span>
+            </div>
+            <div class="inv-row">
+              <span class="inv-icon" style="color:var(--c-blue);">🔧</span>
+              <span class="inv-name">Dental Explorer Set</span>
+              <span class="inv-qty" style="color:var(--c-blue);">8 pcs</span>
+            </div>
+            <div class="inv-row low-alert">
+              <span class="inv-icon" style="color:var(--c-rose);">🩹</span>
+              <span class="inv-name">Gauze Pads (4x4)</span>
+              <span class="inv-qty">5 packs <span class="alert-tag">⚠ LOW</span></span>
+            </div>
+            <div class="inv-row low-alert">
+              <span class="inv-icon" style="color:var(--c-rose);">💉</span>
+              <span class="inv-name">Lidocaine 2% Carpules</span>
+              <span class="inv-qty">3 boxes <span class="alert-tag">⚠ LOW</span></span>
+            </div>
+            <div class="inv-row">
+              <span class="inv-icon" style="color:var(--c-green);">🧤</span>
+              <span class="inv-name">Nitrile Gloves (M)</span>
+              <span class="inv-qty" style="color:var(--c-green);">200 pcs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-content" data-reveal="slide-right">
+        <span class="badge badge-amber" style="margin-bottom:1rem;"><i class="fa-solid fa-boxes-stacked"></i> Inventory</span>
+        <h2>Smart inventory with<br><span class="grad-text">automatic alerts</span></h2>
+        <p>Track every medicine, supply, and piece of equipment in your clinic. When stock runs low, DentalOS fires an automatic alert — so you can reorder before a patient is affected.</p>
+        <ul class="feature-bullets">
+          <li><i class="fa-solid fa-check-circle"></i> Real-time stock levels with add/decrease tracking</li>
+          <li><i class="fa-solid fa-check-circle"></i> Automated low stock alert notifications</li>
+          <li><i class="fa-solid fa-check-circle"></i> Full audit log of every inventory event</li>
+          <li><i class="fa-solid fa-check-circle"></i> Categories: Medicines, Equipment, Supplies</li>
+          <li><i class="fa-solid fa-check-circle"></i> Expiry date tracking</li>
+          <li><i class="fa-solid fa-check-circle"></i> Export inventory to CSV</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Lab Print Workflow -->
+    <div class="showcase-grid">
+      <div class="showcase-content" data-reveal="slide-left">
+        <span class="badge badge-cyan" style="margin-bottom:1rem;"><i class="fa-solid fa-flask"></i> Lab Work</span>
+        <h2>Printable lab slips,<br><span class="grad-text">ready in one click</span></h2>
+        <p>Create lab work orders for crowns, bridges, aligners, and prosthetics. Track each order's status through its workflow. When ready to send, print a professional slip with all details to hand directly to your lab partner.</p>
+        <ul class="feature-bullets">
+          <li><i class="fa-solid fa-check-circle"></i> Create orders with work type, lab name, and date</li>
+          <li><i class="fa-solid fa-check-circle"></i> Status workflow: Sent → In Progress → Received</li>
+          <li><i class="fa-solid fa-check-circle"></i> Printable lab slip with patient & work details</li>
+          <li><i class="fa-solid fa-check-circle"></i> Linked to patient profile permanently</li>
+        </ul>
+      </div>
+      <div class="showcase-visual" data-reveal="slide-right">
+        <div class="showcase-panel">
+          <div class="panel-title">Lab Work Slip — Print Preview</div>
+          <div class="lab-slip">
+            <div class="lab-row"><span>Patient</span><span class="lv">Priya Patel</span></div>
+            <div class="lab-row"><span>Work Type</span><span class="lv">PFM Crown</span></div>
+            <div class="lab-row"><span>Tooth No.</span><span class="lv">#26</span></div>
+            <div class="lab-row"><span>Lab Name</span><span class="lv">Smileworks Dental Lab</span></div>
+            <div class="lab-row"><span>Date Sent</span><span class="lv">17 Jun 2026</span></div>
+            <div class="lab-row"><span>Expected</span><span class="lv">24 Jun 2026</span></div>
+            <div class="lab-row"><span>Status</span><span class="lv" style="color:var(--c-amber);">In Progress</span></div>
+            <div class="lab-row"><span>Note</span><span class="lv">Shade: A2</span></div>
+          </div>
+          <button class="lab-print-btn"><i class="fa-solid fa-print"></i> Print Lab Slip</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSV Export -->
+    <div class="showcase-grid">
+      <div class="showcase-visual" data-reveal="slide-left">
+        <div class="showcase-panel">
+          <div class="panel-title">CSV Export — Billing Data (Excel Ready)</div>
+          <div class="csv-preview">
+            <div class="csv-scroll-wrap">
+              <table class="csv-table">
+                <colgroup>
+                  <col class="col-inv">
+                  <col class="col-pat">
+                  <col class="col-tx">
+                  <col class="col-amt">
+                  <col class="col-st">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th title="Invoice Number">Invoice #</th>
+                    <th>Patient</th>
+                    <th>Treatment</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td title="INV-202606-0021">INV-0021</td>
+                    <td>Rahul S.</td>
+                    <td>RCT</td>
+                    <td>₹3,500</td>
+                    <td style="color:var(--c-green);font-weight:700;">Paid</td>
+                  </tr>
+                  <tr>
+                    <td title="INV-202606-0022">INV-0022</td>
+                    <td>Priya P.</td>
+                    <td>Crown</td>
+                    <td>₹8,200</td>
+                    <td style="color:var(--c-amber);font-weight:700;">Pending</td>
+                  </tr>
+                  <tr>
+                    <td title="INV-202606-0023">INV-0023</td>
+                    <td>Amit K.</td>
+                    <td>Filling</td>
+                    <td>₹1,200</td>
+                    <td style="color:var(--c-green);font-weight:700;">Paid</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" class="td-note">+ all records exported…</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <button class="csv-export-btn"><i class="fa-solid fa-file-csv"></i> Export to CSV (Excel)</button>
+        </div>
+      </div>
+      <div class="showcase-content" data-reveal="slide-right">
+        <span class="badge badge-green" style="margin-bottom:1rem;"><i class="fa-solid fa-file-csv"></i> Data Export</span>
+        <h2>Export everything to<br><span class="grad-text">CSV for Excel</span></h2>
+        <p>Every module in DentalOS supports one-click CSV export. Share reports with your accountant, run custom analysis in Excel, or keep an offline backup — always with complete, structured data.</p>
+        <ul class="feature-bullets">
+          <li><i class="fa-solid fa-check-circle"></i> Billing invoices with full payment details</li>
+          <li><i class="fa-solid fa-check-circle"></i> Patient list with demographics</li>
+          <li><i class="fa-solid fa-check-circle"></i> Appointment records</li>
+          <li><i class="fa-solid fa-check-circle"></i> Inventory stock levels</li>
+          <li><i class="fa-solid fa-check-circle"></i> Lab work orders</li>
+          <li><i class="fa-solid fa-check-circle"></i> All exports are Excel-compatible CSV</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════ NOTIFICATIONS ══════════════════════════ -->
+<section id="notifications" class="notif-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-amber"><i class="fa-solid fa-bell"></i> Notifications</span></div>
+      <h2>Stay informed.<br><span class="grad-text">Never miss a thing.</span></h2>
+      <p>Real-time in-app notifications keep every member of your team instantly updated on what matters.</p>
+    </div>
+    <div class="notif-demo">
+      <div class="notif-card" data-reveal="slide-up-sm">
+        <div class="notif-icon" style="background:rgba(244,63,94,.12);color:var(--c-rose);"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="notif-body"><div class="notif-title">⚠ Low Stock Alert</div><div class="notif-sub">Gauze Pads (4x4) — only 5 packs remaining. Please reorder.</div></div>
+        <div class="notif-time">Just now</div>
+      </div>
+      <div class="notif-card" data-reveal="slide-up-sm">
+        <div class="notif-icon" style="background:rgba(52,211,153,.12);color:var(--c-green);"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="notif-body"><div class="notif-title">New Appointment Confirmed</div><div class="notif-sub">Rahul Sharma booked for RCT with Dr. Anil — Tomorrow, 10:30 AM</div></div>
+        <div class="notif-time">2 min ago</div>
+      </div>
+      <div class="notif-card" data-reveal="slide-up-sm">
+        <div class="notif-icon" style="background:rgba(34,211,238,.12);color:var(--c-cyan);"><i class="fa-solid fa-flask"></i></div>
+        <div class="notif-body"><div class="notif-title">Lab Order Received</div><div class="notif-sub">PFM Crown for Priya Patel (#26) received from Smileworks Lab.</div></div>
+        <div class="notif-time">1 hr ago</div>
+      </div>
+      <div class="notif-card" data-reveal="slide-up-sm">
+        <div class="notif-icon" style="background:rgba(251,191,36,.12);color:var(--c-amber);"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <div class="notif-body"><div class="notif-title">Invoice Marked as Paid</div><div class="notif-sub">INV-202606-0021 — ₹3,500 paid by Rahul Sharma. Balance: ₹0.</div></div>
+        <div class="notif-time">3 hr ago</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ PRICING ══════════════════════════ -->
+<section id="pricing" class="pricing-section">
+  <div class="container">
+    <div class="sec-header" data-reveal="slide-up">
+      <div class="eyebrow"><span class="badge badge-cyan"><i class="fa-solid fa-indian-rupee-sign"></i> Transparent Pricing</span></div>
+      <h2>Simple, predictable pricing<br>for <span class="grad-text">Indian Practices</span></h2>
+      <p>Choose the setup that fits your clinic. Scale storage dynamically based on your patient records volume.</p>
+    </div>
+
+    <!-- Storage Slider Calculator -->
+    <div class="pricing-calculator" data-reveal="zoom-in">
+      <div class="calc-header">
+        <h3><i class="fa-solid fa-calculator"></i> Interactive Cost Calculator</h3>
+        <p>All plans include <strong>2 GB of free storage</strong> for patient files. Adjust the slider to estimate your total monthly cost with additional storage.</p>
+      </div>
+      <div class="calc-controls">
+        <div class="calc-slider-wrap">
+          <div class="calc-slider-header">
+            <span>Additional Storage:</span>
+            <span class="storage-val" id="storage-val-display">0 GB</span>
+          </div>
+          <input type="range" id="storage-slider" class="calc-slider" min="0" max="100" value="0" step="1" oninput="updatePricing()" />
+          <div class="calc-legend">
+            <span>0 GB (2 GB Free)</span>
+            <span>25 GB</span>
+            <span>50 GB</span>
+            <span>75 GB</span>
+            <span>100 GB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Grid -->
+    <div class="pricing-grid">
+      
+      <!-- Plan 1 -->
+      <div class="pricing-card" data-reveal="slide-up-sm">
+        <div class="pricing-plan-name">
+          <i class="fa-solid fa-hard-drive" style="color:var(--c-blue);"></i>
+          Fully Offline Setup
+        </div>
+        <div class="pricing-plan-desc">Best for clinics wanting maximum data privacy with complete local offline operations and local backups.</div>
+        
+        <div class="pricing-price-wrap">
+          <div class="pricing-price">
+            <span class="currency">₹</span>
+            <span id="price-val-1">999</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="pricing-price-initial" id="price-breakdown-1">₹999 base + 2GB free</div>
+          <div class="pricing-storage-note">Additional: ₹20 / GB / month</div>
+        </div>
+
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Fully Offline Setup</strong></li>
+          <li><i class="fa-solid fa-circle-check"></i> Offline Local Backup</li>
+          <li><i class="fa-solid fa-circle-check"></i> Default <strong>25 Users</strong> (Doctor, Admin, Worker)</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1st Time Free 2GB Storage</li>
+          <li><i class="fa-solid fa-circle-check"></i> 24*7 Customer Care Support</li>
+          <li><i class="fa-solid fa-circle-check"></i> Easy Install</li>
+          <li><i class="fa-solid fa-circle-check"></i> All Fully Secure & Safe</li>
+          <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Cloud Sync & Remote Access</li>
+          <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Custom Domain & Dental Landing Page</li>
+        </ul>
+
+        <a href="#cta" class="btn btn-outline pricing-btn">Get Offline Installer</a>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="pricing-card popular" data-reveal="zoom-in-sm">
+        <div class="pricing-popular-badge">Best Value</div>
+        <div class="pricing-plan-name">
+          <i class="fa-solid fa-cloud-arrow-up" style="color:var(--c-cyan);"></i>
+          Offline & Cloud Backup
+        </div>
+        <div class="pricing-plan-desc">Run your clinic offline for zero internet dependency, with automated safe backup on the cloud.</div>
+        
+        <div class="pricing-price-wrap">
+          <div class="pricing-price">
+            <span class="currency">₹</span>
+            <span id="price-val-2">1,499</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="pricing-price-initial" id="price-breakdown-2">₹1,499 base + 2GB free</div>
+          <div class="pricing-storage-note">Additional: ₹20 / GB / month</div>
+        </div>
+
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Offline Setup</strong></li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Cloud Backup</strong> (Auto Sync)</li>
+          <li><i class="fa-solid fa-circle-check"></i> Default <strong>25 Users</strong> (Doctor, Admin, Worker)</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1st Time Free 2GB Storage</li>
+          <li><i class="fa-solid fa-circle-check"></i> 24*7 Customer Care Support</li>
+          <li><i class="fa-solid fa-circle-check"></i> Easy Install</li>
+          <li><i class="fa-solid fa-circle-check"></i> All Fully Secure & Safe</li>
+          <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Custom Domain & Dental Landing Page</li>
+        </ul>
+
+        <a href="#cta" class="btn btn-primary pricing-btn">Start 14-Day Free Trial</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card" data-reveal="slide-up-sm">
+        <div class="pricing-plan-name">
+          <i class="fa-solid fa-globe" style="color:var(--c-violet);"></i>
+          Fully Online OS
+        </div>
+        <div class="pricing-plan-desc">Complete cloud software with your own custom dental landing page, accessible anywhere on any device.</div>
+        
+        <div class="pricing-price-wrap">
+          <div class="pricing-price-initial" style="color: var(--c-amber);"><i class="fa-solid fa-tag"></i> Setup: ₹15,000 one-time</div>
+          <div class="pricing-price">
+            <span class="currency">₹</span>
+            <span id="price-val-3">1,999</span>
+            <span class="period">/ month</span>
+          </div>
+          <div class="pricing-price-initial" id="price-breakdown-3">₹1,999 base + 2GB free</div>
+          <div class="pricing-storage-note">Additional: ₹50 / GB / month</div>
+        </div>
+
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> <strong>24*7 Fully Online Software</strong></li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Dental Landing Page</strong> Included</li>
+          <li><i class="fa-solid fa-circle-check"></i> Anywhere Access (All apps/devices)</li>
+          <li><i class="fa-solid fa-circle-check"></i> Fully Cloud Stored Data</li>
+          <li><i class="fa-solid fa-circle-check"></i> <strong>Custom Domain Name</strong> Included</li>
+          <li><i class="fa-solid fa-circle-check"></i> Default <strong>25 Users</strong> (Doctor, Admin, Worker)</li>
+          <li><i class="fa-solid fa-circle-check"></i> 1st Time Free 2GB Storage</li>
+          <li><i class="fa-solid fa-circle-check"></i> 24*7 Premium Support</li>
+          <li><i class="fa-solid fa-circle-check"></i> All Fully Secure & Safe</li>
+        </ul>
+
+        <a href="#cta" class="btn btn-outline pricing-btn">Request Online Setup</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CTA ══════════════════════════ -->
+<section id="cta" class="cta-section">
+  <div class="container">
+    <div class="cta-inner" data-reveal="zoom-in">
+      <span class="badge badge-blue" style="margin-bottom:1.5rem;"><i class="fa-solid fa-rocket"></i> Get Started Today</span>
+      <h2>Ready to modernize<br>your <span class="grad-text">dental practice?</span></h2>
+      <p>Join forward-thinking dental clinics using DentalOS to save time, reduce errors, and focus on what matters most — their patients.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary" style="font-size:1.1rem;padding:1rem 2.5rem;"><i class="fa-solid fa-bolt"></i> Start Free Trial</a>
+        <a href="#" class="btn btn-outline" style="font-size:1.1rem;padding:1rem 2.5rem;"><i class="fa-solid fa-phone"></i> Book a Live Demo</a>
+      </div>
+      <div class="cta-note">✓ No credit card required &nbsp;·&nbsp; ✓ Up to 25 users &nbsp;·&nbsp; ✓ Full feature access</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="ft-brand" data-reveal="fade-in">
+        <div class="logo"><div class="logo-icon"><i class="fa-solid fa-tooth"></i></div> DentalOS</div>
+        <p>The complete dental clinic management platform for modern practices. Built for dentists, receptionists, and clinic owners.</p>
+      </div>
+      <div class="ft-col" data-reveal="fade-in">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">All Features</a></li>
+          <li><a href="#roles">Access Control</a></li>
+          <li><a href="#workflow">How it Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="ft-col" data-reveal="fade-in">
+        <h4>Modules</h4>
+        <ul>
+          <li><a href="#">e-Prescriptions</a></li>
+          <li><a href="#">Appointments</a></li>
+          <li><a href="#">Billing & Invoicing</a></li>
+          <li><a href="#">Lab Work</a></li>
+          <li><a href="#">Inventory</a></li>
+        </ul>
+      </div>
+      <div class="ft-col" data-reveal="fade-in">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DentalOS. All rights reserved.</span>
+      <div class="soc">
+        <a href="#" class="soc-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="soc-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="soc-icon"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /#smooth-wrapper -->
+
+<script src="script.js"></script>
+</body>
+</html>
